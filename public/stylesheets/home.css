@@ -1,0 +1,17 @@
+/*=== VARIABLES ===*/
+	
+/*=== MIXINS ===*/
+/*=== EXTENDABLE CLASS ===*/
+.metaserif-web-pro, .the-loop .article .the-title, .the-loop .article-feature .the-title { font-family: Arial, Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+
+.hero > .inner { height: 435px; }
+
+/*	TODO Changing from top to margin-top might break IE	*/
+
+.background-fix { top: 635px; }
+
+body.iphone .hero, body.ipad .hero { background-color: white; text-align: center; }
+
+.hero > .inner { width: 100%; }
+
+.slideshow { text-align: center; }

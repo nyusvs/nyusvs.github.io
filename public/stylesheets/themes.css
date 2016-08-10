@@ -1,0 +1,45 @@
+/*
+* Default original purple color is #6a298f
+*/
+
+body.default {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	}
+body.default #nav ul.level01 li a:hover, 
+body.default #nav ul.level01 li a.state-active{
+	background-image:url(../img/curtain-bg.png);
+	color:#FFF;
+	}
+	body.default #nav ul.level01 li.active a{
+	background:#FFF;
+	color:#1c1c1c;	
+	}
+body.default #nav .curtain, 
+body.default #nav ul.level01 li.active ul li a{
+	background-image:url(../img/curtain-bg-norepeat.png);
+	max-height: 200px;
+	font-family:Arial, Arial, Helvetica, sans-serif;
+	font-weight:400;
+	font-size:13px;
+	text-transform:lowercase;
+	}
+	body.default #nav ul.level02 li a:hover, 
+	body.default #nav ul.level02 li.active a,
+	body.default #nav ul.level02 li a.state-active{
+		background:#FFF;
+		color:#1c1c1c;
+		}
+		body.default #nav ul.level01 li.active a{
+			background:#FFF;
+			color:#1c1c1c;
+			}
+		body.default #nav ul.level02 li.active ul.level03 li a{
+			background-image:url(../img/curtain-bg.png);
+			}
+			body.default #nav ul.level02 li.active ul.level03 li a:hover, 
+			body.default #nav ul.level02 li.active ul.level03 li.active a{
+				background:#FFF;
+				}		
