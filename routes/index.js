@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
-var sendgrid = require("sendgrid")("6HT1sqUkSYGlVvpX89XVPQ.vzYDEgHR8mSU3HjUbENm_c3mbqbbTeZu2b8xDs8lXM4");//("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");
+var sendgrid = require("sendgrid");
 
 
 var helper = require('sendgrid').mail;
