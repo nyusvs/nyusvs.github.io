@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
-var sendgrid = require("sendgrid");
-
+var sendgrid = require("sendgrid")("SENDGRID_APIKEY");
 
 var helper = require('sendgrid').mail;
 
@@ -35,7 +34,7 @@ router.post('/contactus', function(req, res, next) {
   var bod = req.body.name_id + "\n"+ req.body.email_id+"\n"+req.body.inquiry_id;
   console.log(bod);
   from_email = new helper.Email('test@example.com')
-  to_email = new helper.Email('svs@stern.nyu.edu')
+  to_email = new helper.Email('nyusvs@gmail.com')
   subject = 'New Inquiry via Contact Us Form on nyusvs.com'
   content = new helper.Content('text/plain', bod)
   mail = new helper.Mail(from_email, subject, to_email, content)
@@ -59,5 +58,3 @@ router.post('/contactus', function(req, res, next) {
 
 
 module.exports = router;
-
-//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
