@@ -6,3 +6,13 @@ body {
 a {
   color: #00B7FF;
 }
+
+.navbarPicHeader {
+  padding: 0px;
+  height: 90%;
+}
+.navbarPicHeader>img {
+  height: 10%;
+  padding: 15px;
+  width: auto;
+}
