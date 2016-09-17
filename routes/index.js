@@ -30,6 +30,10 @@ router.get('/contactus', function(req, res, next) {
   res.render('contactus', { title: 'Express' });
 });
 
+router.get('/eboard2', function(req, res, next) {
+  res.render('eboard2', { title: 'Express' });
+});
+
 router.post('/contactus', function(req, res, next) {
   var bod = req.body.name_id + "\n"+ req.body.email_id+"\n"+req.body.inquiry_id;
   console.log(bod);
