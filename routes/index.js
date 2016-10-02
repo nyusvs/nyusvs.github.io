@@ -30,8 +30,16 @@ router.get('/contactus', function(req, res, next) {
   res.render('contactus', { title: 'Express' });
 });
 
+router.get('/articles', function(req, res, next) {
+  res.render('articles', { title: 'Express' });
+});
+
 router.get('/eboard2', function(req, res, next) {
   res.render('eboard2', { title: 'Express' });
+});
+
+router.get('/job', function(req, res, next) {
+  res.render('job', { title: 'Express' });
 });
 
 router.post('/contactus', function(req, res, next) {
